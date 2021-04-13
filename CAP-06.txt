@@ -1,0 +1,34 @@
+Capítulo 06 - Parametros da requisição
+Nesse capítulo aprendemos:
+
+⦁ É possível adicionar parâmetros na URL;
+
+⦁ O parâmetro na URL é identificado por: '?'. Exemplo:
+youtube.com/results?search_query=Palmeiras Nesse caso o
+parâmetro é o sarch-query e o seu valor Palmeiras;
+
+⦁ Quando há diversos parâmetros devemos separá-los por '&',
+exemplo:youtube.com/results?search_query=Palmeiras&ano=2021
+
+⦁ O parâmetro na URL com '?' chama-se Query Params;
+
+⦁ Existem verbos (ações) no HTTP se enviarmos parâmetros usando o
+verbo GET esses serão mostrados na URL, ou seja, todos podem ver.
+
+⦁ Se usarmos o verbo POST os parâmetros são enviados no corpo
+(BODY) da requisição, não serão explícitos na URL.
+
+⦁ Existem outros Verbos no HTTP, por exemplo o DELETE e PUT,
+esses dois são mais usados em Web Services. Ainda existem mais
+verbos, menos utilizados;
+
+⦁ Há outra maneira de enviar parâmetro via URL, que é por PATH, por
+exemplo: youtube.com/results/palmeiras. O /palmeiras é um
+parâmetro. Para seu funcionamento exige-se programção no lado do
+servidor;
+
+⦁ Web Service nada mais é que disponibilizar uma funcionalidade na
+web. Ele também utiliza HTTP. Web Service retornam dados em
+formatos independentes de visualização, ou seja, não vem HTML e
+sim em XML, JSON, etc...O cliente nesse caso pode ser o navegador,
+mas é mais comum que seja: celular, outra aplicação, etc..

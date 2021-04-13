@@ -1,0 +1,24 @@
+Capítulo 05 - Depurando a requisição HTTP
+Nesse capítulo aprendemos:
+
+⦁ Há nos navegadores ferramentas para monitorar as Request
+Response, basta apertar F12 e ir na aba network;
+
+⦁ Na ferramentas vamos ver dados da request e response;
+
+⦁ Aprendemos que a resposta do servidor pode ser a exigência para o
+cliente fazer uma nova requesição para outro endereço. Chamamos
+isso de redirecionamento Client Side, pois o cliente que irá lançar a
+nova request para poder acessar nova página/recurso;
+
+⦁ Cada Response é acompanhada com um Status Code, podendo ser:
+2xx = Requisição foi bem sucedida;
+3xx = O cliente deverá fazer uma nova request (cliente foi
+redirecionado);
+404 = Página/Conteúdo não encontrado;
+405 = Método não permitido;
+5xx = Ocorreu um errdo do lado do servidor.
+
+⦁ O servidor pode trafegar qualquer informação, é comum ao acessar o
+site qualquer site, por exemplo, alura.com.br a resposta conter
+diversos arquivos, como html, css, img...

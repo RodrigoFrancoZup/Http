@@ -1,0 +1,22 @@
+Capítulo 08 - HTTP2. Por uma web mais eficiente
+Nesse capítulo aprendemos:
+
+⦁ Agora existe o HTTP2, ele não é diferente do HTTP, ele apenas
+melhorou! Se atualizou para consumir menos banda (internet);
+
+⦁ As melhorias:
+1. Agora os headers são binarios ( 0 ou 1) e não textuais;
+2. Os headers passaram a ser comprimidos pelo HPACK (algoritmo);
+3. Os headers passaram a ser criptografados (TLS);
+4. Habilitou por padrao o GZIP da resposta (compactou as respostas);
+5. Requisições agora são paralelas, o cliente pode fazer várias sem ficar
+esperando chegar a respota de uma request para enviar outra...
+6. Cabeçalhos agora guardam estado, antes para cada request
+deviamos preencher o cabeçalho, agora após a primeira request
+preenchamos apenas as mudanças;
+7. Servidor agora faz o Sever-push, ou seja, o servidor ao receber a
+request ele analisa o que mais é interessante lhe enviar junto com a
+resposta, exemplo: antes ao requisitar uma página o servidor iria
+enviar apenas o html, depois o cliente ia pedir o css e assim por
+diante, agora se você pedir uma página o servidor já lhe responde a
+página html, o arquivo js e css, tudo na mesma resposta.

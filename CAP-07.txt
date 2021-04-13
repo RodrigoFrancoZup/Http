@@ -1,0 +1,35 @@
+Capítulo 07 - Serviços Web-REST
+Nesse capítulo aprendemos:
+
+⦁ Não precisamos usar HTTP somente no navegador;
+
+⦁ Um software pode se comunicar com outro, daí temos o Web Service,
+pois um software vai estar prestanto um serviço para o outro;
+
+⦁ API será a documentação de como deverá ser a comunicação entre
+os softwares para se conseguir consumir um determinado serviço;
+
+⦁ A reposta de um Web Service normalmente é em JSON ou XML, pois
+seu objetivo não mostrar a tela (por isso não envia HTML);
+
+⦁ Podemos fazer configuração no cabeçalho HTTP, por exemplo o
+atributo Accept: indica que tipo de resposta nós vamos aceitar. O
+cabeçalho Content-Type: indica o tipo de dado presenta na
+mensagem. Exemplos:
+Accept: application/json (Indica que vamos aceitar a resposta com
+formato JSON;
+Content-Type: application/json (Indica que na resposta o conteúdo é
+JSON;
+
+⦁ REST é um padrão usado para desenvolver Web Service. Esse
+padrão define que uma requisição tem que ter 3 componentes:
+1. Recurso = As URIs do nosso sistema devem rerpresentar recursos e
+não ações. Ex: localhost:8080/restaurante (metodo post) irá indicar
+que é para cadastrar um restaurante, aqui não use verbo!;
+2. Operações = Devemos usar os verbos do HTTP para representar a
+ação que queremos fazer com o recurso, no exemplo anterior usamos
+post para criar um restaurante, se quiser deletar devemos usar o
+verbo http delete e assim por diante...
+3. Representação = Não devemos nunca trafegar o recurso na rede,
+vamos apenas trafegar uma representação dele! Essa representação
+pode ser em XML, Json...

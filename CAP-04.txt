@@ -1,0 +1,28 @@
+Capítulo 04 - O cliente pede e o servidor responde
+Nesse capítulo aprendemos:
+
+⦁ A mensagem que o Cliente envia para o Servidor nós chamaos de
+REQUEST ou HTTP REQUEST;
+
+⦁ A mensagem que o Servidor enviará ao cliente nós chamamos de
+RESPONSE ou HTTP RESPONSE;
+
+⦁ No HTTP a arquitetura sempre será Request-Response, ou seja, o
+Cliente sempre inicia a comunicação e o servidor responde;
+
+⦁ Aprendemos que a REQUEST são STATELESS, ou seja, não
+guardam o estado, cada REQUEST é uma REQUEST NOVA;
+
+⦁ Se cada REQUEST é uma nova requisição, como a gente faz login no
+site alura.com.br e ao clicar em um novo curso a gente não precisa
+refazer o login? É que se cria uma sessão temporária.
+
+⦁ A Sessão criada nada mais é que: o servidor na primeira request irá
+validar seu login (Usuário e Senha) e depois lhe devolverá um HASH
+(sequencia de números e letras) que identifica o usuário, e nas
+próximas requisições esse HASH é enviado juntamente com outros
+dados;
+
+⦁ Onde o HASH é armazenado? O hash é armazenado nos COOKIES.
+Esse é um arquivo que cada site gera em nosso computador e
+armazena alguns dados, entre eles o HASH da Sessão.

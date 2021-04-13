@@ -1,0 +1,13 @@
+Capítulo 01 - O que é HTTP?
+Nesse capítulo aprendemos:
+
+⦁ O que é um protocolo? Protocolo é um conjunto de regras para se
+fazer uma comunicação, pois seguindo essas regras os envolvidos
+serão compreendidos durante a comunicação.
+
+⦁ O que é HTTP? É uma de diversas regras que podemos aplicar em
+uma comunicação. É uma regra que atende a arquitetura Cliente-
+Servidor. HTTP significa HyperText Transfer Protocol, em portugês
+(Protocolo de Transferência de HiperTexto).
+Exemplo: O cliente é o navegador firefox e o servidor é a aplicação
+Java.

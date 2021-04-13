@@ -1,0 +1,41 @@
+Capítulo 03 - Endereços sob seu domínio
+Nesse capítulo aprendemos:
+
+⦁ O que é endereço (URL)? É tudo que digitamos no navegador, ele é
+composto por: protocolo :// dominio : porta /recurso ou
+protocolo :// dominio : porta /caminho/recurso obs: o uso de www. é
+opcional, assim como a porta!
+
+⦁ O dominio começa ser lido da direita para esquerda e começa do
+dominio para sub-dominio, exemplo: alura.com.br o 'br' é domínioo
+'com' e o 'alura' são sub-dominios. Se usarmos o 'www' esse também
+é um sub-domínio.
+
+⦁ Outros subdomínios: existem subdomínios que representam sessões
+específicas dentro de um site, por exemplo: mail.google.com, nesse
+caso 'mail' é um sub-domínio;
+
+⦁ Na verdade os computadores não entendem os dominios escritos da
+forma que fazemos 'uol.com.br', o computador reconhece apenas
+números, ou seja, IP da máquina (servidor) que queremos acessar.
+Para não termos que decorar o IP de cada site, criaram o servidor
+DNS, que é um serviço de transformar o texto em IP, ou seja.
+uol.com.br em 123.12.12.123. Para descobrimos o IP de um domínio
+podemos utilizar no terminao o comando nslookup uol.com.br,
+
+⦁ Servidor DNS significa Domain Name System;
+
+⦁ Alem do domínio que queremos acessar devemos informar a Porta do
+servidor, por padrão o HTTP usa a porta 80 e o HTPS 443 e só não
+precisamos digita-los, pois os navegadores colocam para nos esses
+dados de forma automática. Exemplo: http://uol.com.br:80
+
+⦁ Só podemos acessar portas abertas no servidor, caso contrário
+ocorrera um Timeout;
+
+⦁ Recurso é um conteúdo específico que queremos acessar, deve ter
+nome único;
+
+⦁ URI X URL: Ambas podem ser usada no contexto web, pois uma URL
+é uma URI, mas nem toda URI é URL, pois a URI não obriga a utilizar
+o protocolo e endereço.
